@@ -1,5 +1,3 @@
-import { Interface } from "readline"
-
 export interface Frase {
     value: string; // contains the quote
     icon_url: string;

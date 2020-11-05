@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../servicios/api.service';
+import { Frase } from '../../modelos/frase';
+
 
 @Component({
   selector: 'app-verfrase',
@@ -6,10 +9,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./verfrase.component.css']
 })
 export class VerfraseComponent implements OnInit {
+  public frase: Frase = {
+    value: "",
+    icon_url: "",
+    id: "",
+    url: ""
+  };
 
-  constructor() { }
+  constructor(private apiservice: ApiService) { }
 
   ngOnInit(): void {
+    this.apiservice.getFrase()
+    .subscribe(frase =>
+      this.frase = frase);
   }
 
 }
