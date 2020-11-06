@@ -2,6 +2,12 @@
     margin: 50px auto;
 }
 
+.quote{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-style: italic;
+}
+
 .example-card {
     max-width: 400px;
 }
