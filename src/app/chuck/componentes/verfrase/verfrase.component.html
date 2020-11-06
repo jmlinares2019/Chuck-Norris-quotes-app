@@ -1,1 +1,15 @@
-<p>{{ frase.value }}</p>
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Chuck Norris Quotes</mat-card-title>
+      <mat-card-subtitle>@ChuckNorrisQuotes</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../../assets/img/chuck-norris.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>{{ frase.value }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>

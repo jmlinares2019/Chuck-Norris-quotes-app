@@ -1,0 +1,12 @@
+.mat-card{
+    margin: 50px auto;
+}
+
+.example-card {
+    max-width: 400px;
+}
+  
+.example-header-image {
+    background-image: url('https://assets.chucknorris.host/img/avatar/chuck-norris.png');
+    background-size: cover;
+}
